@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <div id="navbar">
+        <div id="nav1">Aniket Bhandarkar</div>
+        <div id="nav2">
+            <div>Home</div>
+            <div>About</div>
+            <div>Skills</div>
+            <div>Projects</div>
+            <div>Contact</div>
+        </div>
+    </div>
+    <div class="frame" id="namepic">
+        <div id="namepic1half">
+            <div class="hero" id="home">
+                <div class="hero__container">
+                    <h2 class="name_heading">Hi, I am Aniket Bhandarkar,</h2>
+                    <h2 class="hero__heading">
+                        <span class="type" data-wait="2000"
+                            data-words='["Full Stack Web Developer","Java Backend Developer"]'></span>
+                    </h2>
+
+                </div>
+            </div>
+            <button id="d_resume">Resume <i class="fa fa-download"></i></button>
+            <div id="connect">
+                <a href="https://github.com/aniket427" class=social__icon--link><i class="fa fa-github"
+                        target="_blank"></i></a>
+                <a href="https://www.linkedin.com/in/aniket10/" class="social__icon--link"><i
+                        class="fa fa-linkedin-square" target="_blank"></i></a>
+                <a href="mail:bhandarkaraniket0@gmail.com" class="social__icon--link"><i class="fa fa-envelope-square"
+                        target="_blank"></i></a>
+            </div>
+
+        </div>
+        <div id="namepic2half">
+            <img src="https://i.ibb.co/Csgf6MY/20220520-081105-335.png" alt="">
+        </div>
+
+    </div>
+    <div class="frame" id="about">
+
+        <div>
+            <div id="about_img"><img src="https://mattfarley.ca/img/hero-devices.svg" alt=""></div>
+            <div id="about_detail">
+                <h4 class="title">About me</h4>
+                <p>An aspiring Java backend developer with a strong interest in projects requiring conceptual and
+                    analytical thinking. Enjoys designing applications with different functionalities and keeping end
+                    users in mind. Worked through 1000+ hours of coding assignments and collaborative projects at Masai
+                    School using tech stacks Java, HTML, CSS and JavaScript.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="frame" id="skills">
+        <h4 class="title">Skills</h4>
+        <div id="techStacks">
+            <div class="tech-card">
+                <div class="tech-card-logo"><img src="./resources/java.png" alt=""></div>
+                <div class="tech-card-name">Java</div>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-card-logo"><img src="./resources/4299956.png" alt=""></div>
+                <div class="tech-card-name">SQL</div>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-card-logo"><img src="./resources/html.svg" alt=""></div>
+                <div class="tech-card-name">HTML</div>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-card-logo"><img src="./resources/css.svg" alt=""></div>
+                <div class="tech-card-name">CSS</div>
+            </div>
+            <div class="tech-card">
+                <div class="tech-card-logo"><img src="./resources/js.svg" alt=""></div>
+                <div class="tech-card-name">JavaScript</div>
+            </div>
+
+            <div class="tech-card">
+                <div class="tech-card-logo"><img src="./resources/git.svg" alt=""></div>
+                <div class="tech-card-name">Git</div>
+            </div>
+        </div>
+    </div>
+    <div class="frame" id="projects">
+        <h4 class="title">Projects</h4>
+    </div>
+    <div class="frame" id="contact">contact</div>
+
+</body>
+
+</html>
+<script>
+    //TypeWriter Effect
+    // SELECT ELEMENTS FROM OUR DOM
+    document.addEventListener("DOMContentLoaded", init);
+    // INIT FUNCTION
+    function init() {
+        // GRAP ALL ELEMENT & ATTRIBUTE
+        const txtElement = document.querySelector(".type");
+        // GET THE ATTRIBUTES OF TXT ELEMENT AND PARSE ITS DATA & REMEMBER JSON DATA SHOULD BE ON "" NOT ''
+        const words = JSON.parse(txtElement.getAttribute("data-words"));
+        const wait = txtElement.getAttribute("data-wait");
+        console.log(txtElement);
+        console.log(words);
+        console.log(wait);
+        // INITILIZE TYPE WRITER & WE MAKE IT BY NEW
+        new typeWriter(txtElement, words, wait);
+    }
+    // TYPE WRITER FUNCTION
+    const typeWriter = function (txtElement, words, wait = 3000) {
+        // TEXT ELEMENT THAT PASSED IN
+        this.txtElement = txtElement;
+        // WORDS THAT PASSEF IN
+        this.words = words;
+        // WAIT TIME THAT PASSEF IN
+        this.wait = parseInt(wait, 10);
+        // TXT YOU WILL SEE AT RELOAD
+        this.txt = "";
+        // ARRAY OF WORDS
+        this.indexOfTheWord = 0;
+        // THE MAIN METHOD THAT WILL BE WORK WITH TYPE WRITER
+        this.type();
+        // REPRESENT THE STATE IF IT DELETING OR NOT
+        this.isDeleteing = false;
+    };
+    // CREATE OUR TYPE METHOD
+    typeWriter.prototype.type = function () {
+        // GET THE CURRNET INDEX OF THE WORD
+        const currnet = this.indexOfTheWord % this.words.length;
+        // console.log(currnet);
+        // GET THE FULL TEXT OF A CURRNET WIRD
+        const fullTxt = this.words[currnet];
+        // console.log(fullTxt);
+        // CHECK IF DELETING
+        if (this.isDeleteing) {
+            // REMOVE CHAR
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            // ADD CHAR
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+        // INSERT TXT INTO TXTELEMENT
+        this.txtElement.innerHTML = `<span class="txt"> ${this.txt} </span>`;
+        // LETS MAKE THE TYPE SPEED
+        let typeSpeed = 100;
+        if (this.isDeleteing) {
+            typeSpeed /= 2;
+        }
+        // CHECK IF THE WORD IS COMPELETE GO TO THE OTHER WORD
+        if (!this.isDeleteing && this.txt === fullTxt) {
+            // MAKE THE COMPELETE WORD PAUSE
+            typeSpeed = this.wait;
+            // SET ISDELETING VARIABLE TO TRUE
+            this.isDeleteing = true;
+            console.log("Pasue");
+        }
+        if (this.isDeleteing && this.txt === "") {
+            this.isDeleteing = false;
+            // MOVE TO THE NEXT WORD
+            this.indexOfTheWord++;
+            // PAUSE BEFORE START TYPING
+            typeSpeed = 400;
+            console.log("Delete");
+        }
+        setTimeout(() => this.type(), typeSpeed);
+    };
+    Footer
+</script>
