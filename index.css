@@ -567,7 +567,7 @@ body {
 
   #stat-card {
     height: 30vmin;
-    border: 3px solid gold;
+    /* border: 3px solid gold; */
   }
 }
 
@@ -735,7 +735,7 @@ body {
   }
 
   #about_detail {
-/*     border: 1px solid gold; */
+    /*     border: 1px solid gold; */
     width: 80%;
   }
 
