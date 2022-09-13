@@ -5,25 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aniket Bhandarkar</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./github-calendar-responsive.css" />
+    <link rel="stylesheet" href="./statistics.css">
+
 </head>
 
 <body>
 
-    <div id="navbar">
-        <div id="nav1">Aniket Bhandarkar</div>
-        <div id="nav2">
-            <div>Home</div>
-            <div>About</div>
-            <div>Skills</div>
-            <div>Projects</div>
-            <div>Contact</div>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#" id="navbar__logo">
+                <h4 class="transition">Aniket Bhandarkar</h4>
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#skills" class="navbar__links" id="skills-page">Skills</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contact" class="navbar__links" id="contact-page">Contact</a>
+                </li>
+            </ul>
         </div>
-    </div>
+    </nav>
+
+
+    <!-- mainframe section  -->
     <div class="frame" id="namepic">
         <div id="namepic1half">
             <div class="hero" id="home">
@@ -36,9 +61,13 @@
 
                 </div>
             </div>
-            <button id="d_resume">Resume <i class="fa fa-download"></i></button>
+            <a href="./resources/Aniket Bhandarkar.pdf" download="" id="btn_anchor"><button id="d_resume">Resume <i
+                        class="fa fa-download"></i></button></a>
+
+
+
             <div id="connect">
-                <a href="https://github.com/aniket427" class=social__icon--link><i class="fa fa-github"
+                <a href="https://github.com/aniket427" class="social__icon--link"><i class="fa fa-github"
                         target="_blank"></i></a>
                 <a href="https://www.linkedin.com/in/aniket10/" class="social__icon--link"><i
                         class="fa fa-linkedin-square" target="_blank"></i></a>
@@ -48,7 +77,11 @@
 
         </div>
         <div id="namepic2half">
-            <img src="https://i.ibb.co/Csgf6MY/20220520-081105-335.png" alt="">
+            <div class="box">
+                <img src="https://i.ibb.co/Csgf6MY/20220520-081105-335.png" alt="">
+            </div>
+
+
         </div>
 
     </div>
@@ -60,8 +93,8 @@
                 <h4 class="title">About me</h4>
                 <p>An aspiring Java backend developer with a strong interest in projects requiring conceptual and
                     analytical thinking. Enjoys designing applications with different functionalities and keeping end
-                    users in mind. Worked through 1000+ hours of coding assignments and collaborative projects at Masai
-                    School using tech stacks Java, HTML, CSS and JavaScript.</p>
+                    users in mind. Seeking a challenging role in the field of software development that will offer an
+                    opportunity for further development of my abilities, skills and knowledge in an organization.</p>
             </div>
         </div>
 
@@ -101,13 +134,226 @@
     </div>
     <div class="frame" id="projects">
         <h4 class="title">Projects</h4>
+        <div class="pro-card">
+            <div class="l-pro-card">
+                <img class="pro-img"
+                    src="https://i.ibb.co/Z2gPwR2/Web-capture-12-9-2022-21932-friendly-cajeta-33faab-netlify-app.jpg"
+                    alt="">
+            </div>
+            <div class="r-pro-card">
+                <h3 class="pro-title">Clone of boat-lifestyle.com</h3>
+                <p class="pro-desc">
+                    BoAt is the world's 5th largest wearable brand along with India's No. 1 Earwear brand. boAt's
+                    product range includes an extensive catalog of headphones, earphones, smart watches, speakers,
+                    travel chargers, and premium cables, with Indian consumers' desires and preferences at the core of
+                    its design.
+                </p>
+                <p class="pro-desc">
+                    <span class="pro-lower-title">Tech Stack : </span>
+                    HTML5 | CSS3 | Javascript
+                </p>
+                <p class="pro-desc">A collaborative project, built in 5 days by a team of 6 members.</p>
+
+                <div class="btn-div">
+                    <a href="https://github.com/hariohmtripathi/Boat-Lifestyle-" target="_blank"><button
+                            class="pro-btn">Source code <i class="fa fa-external-link"></i></button></a>
+
+                    <a href="https://friendly-cajeta-33faab.netlify.app/" target="_blank"><button class="pro-btn">Live
+                            <i class="fa fa-external-link"></i></button></a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="pro-card">
+            <div class="l-pro-card">
+                <img class="pro-img"
+                    src="https://i.ibb.co/x768dkt/Web-capture-12-9-2022-21148-harmonious-crostata-782582-netlify-app.jpg"
+                    alt="">
+            </div>
+            <div class="r-pro-card">
+                <h3 class="pro-title">Clone of kindmeal.my
+                </h3>
+                <p class="pro-desc">
+                    KindMeal.my is Malaysia's leading meat-free lifestyle platform. KindMeal.my is operated by
+                    PetFinder.my, Malaysia's largest animal welfare portal with a mission is to creatively harness
+                    technology to improve lives and build a compassionate community. This website has almost everything
+                    related to meat-free food.
+                </p>
+                <p class="pro-desc">
+                    <span class="pro-lower-title">Tech Stack : </span>
+                    HTML5 | CSS3 | Javascript
+                </p>
+                <p class="pro-desc">A collaborative project, built in 5 days by a team of 5 members.</p>
+                <div class="btn-div">
+                    <a href="https://github.com/aniket427/helpless-nation-9785"><button class="pro-btn">Source code <i
+                                class="fa fa-external-link"></i></button></a>
+
+                    <a href="https://harmonious-crostata-782582.netlify.app/" target="_blank"><button
+                            class="pro-btn">Live <i class="fa fa-external-link"></i></button></a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="frame" id="contact">contact</div>
+    <div class="frame" id="statistics">
+        <h4 class="title">Statistics</h4>
+        <div id="stat-card">
+            <div id="stat_card_div">
+                <iframe id="stat-card-iframe" loading="lazy"
+                    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFMErkxTmk&#x2F;view?embed"
+                    allowfullscreen="allowfullscreen" allow="fullscreen">
+                </iframe>
+            </div>
+
+        </div>
+
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data.
+        </div>
+    </div>
+
+    <div id="contact">
+        <h4 class="title">Contact Me</h4>
+        <div id="con-main-card">
+            <a href="https://linkedin.com/in/aniket10" target="_blank" class="hvr-forward">
+                <div class="con-card transition">
+                    <i class="fa fa-linkedin-square" target="_blank"></i>
+                    <h6> LinkedIn</h6>
+                </div>
+            </a>
+            <a href="https://github.com/aniket427/" target="_blank" class="hvr-forward">
+                <div class="con-card transition">
+                    <i class="fa fa-github" target="_blank"></i>
+                    <h6> Github</h6>
+                </div>
+            </a>
+            <a href="mailto:bhandarkaraniket0@gmail.com" target="_blank" class="hvr-forward">
+                <div class="con-card transition">
+                    <i class="fa fa-envelope" target="_blank"></i>
+                    <h6> bhandarkaraniket0@gmail.com</h6>
+                </div>
+            </a>
+            <a href="tel:+918446789157" target="_blank" class="hvr-forward">
+                <div class="con-card transition">
+                    <i class="fa fa-phone" target="_blank"></i>
+                    <h6> +91 8446789157</h6>
+                </div>
+            </a>
+
+        </div>
+
+
+
+    </div>
 
 </body>
 
 </html>
+
+
+<script src="./github-calendar.min.js"></script>
 <script>
+    // GitHubCalendar(".calendar", "aniket427");
+    // or enable responsive functionality
+    GitHubCalendar(".calendar", "aniket427", { responsive: true });
+</script>
+<script>
+
+    //navbar responsiveness
+    const menu = document.querySelector("#mobile-menu");
+    const menuLinks = document.querySelector(".navbar__menu");
+    const navLogo = document.querySelector("#navbar__logo");
+
+    // Display Mobile Menu
+    const mobileMenu = () => {
+        menu.classList.toggle("is-active");
+        menuLinks.classList.toggle("active");
+    };
+
+    menu.addEventListener("click", mobileMenu);
+
+    // Show active menu when scrolling
+    const highlightMenu = () => {
+        const elem = document.querySelector(".highlight");
+        const homeMenu = document.querySelector("#home-page");
+        const aboutMenu = document.querySelector("#about-page");
+        const skillsMenu = document.querySelector("#skills-page");
+        const projectMenu = document.querySelector("#projects-page");
+        const contactMenu = document.querySelector("#contact-page");
+        let scrollPos = window.scrollY;
+        console.log(scrollPos);
+
+        // adds 'highlight' class to my menu items
+        if (window.innerWidth > 960 && scrollPos < 500) {
+            homeMenu.classList.add("highlight");
+            aboutMenu.classList.remove("highlight");
+            skillsMenu.classList.remove("highlight");
+            projectMenu.classList.remove("highlight");
+            contactMenu.classList.remove("highlight");
+            return;
+        } else if (window.innerWidth > 960 && scrollPos < 1200) {
+            homeMenu.classList.remove("highlight");
+            aboutMenu.classList.add("highlight");
+            skillsMenu.classList.remove("highlight");
+            projectMenu.classList.remove("highlight");
+            contactMenu.classList.remove("highlight");
+            return;
+        } else if (window.innerWidth > 960 && scrollPos < 1800) {
+            homeMenu.classList.remove("highlight");
+            aboutMenu.classList.remove("highlight");
+            skillsMenu.classList.add("highlight");
+            projectMenu.classList.remove("highlight");
+            contactMenu.classList.remove("highlight");
+            return;
+        } else if (window.innerWidth > 960 && scrollPos < 2800) {
+            homeMenu.classList.remove("highlight");
+            aboutMenu.classList.remove("highlight");
+            skillsMenu.classList.remove("highlight");
+            projectMenu.classList.add("highlight");
+            contactMenu.classList.remove("highlight");
+            return;
+        } else if (window.innerWidth > 960 && scrollPos < 3200) {
+            homeMenu.classList.remove("highlight");
+            aboutMenu.classList.remove("highlight");
+            skillsMenu.classList.remove("highlight");
+            projectMenu.classList.remove("highlight");
+            contactMenu.classList.remove("highlight");
+            return;
+        }  else if (window.innerWidth > 960 && scrollPos < 5000) {
+            homeMenu.classList.remove("highlight");
+            aboutMenu.classList.remove("highlight");
+            skillsMenu.classList.remove("highlight");
+            projectMenu.classList.remove("highlight");
+            contactMenu.classList.add("highlight");
+            return;
+        }
+
+
+        if ((elem && window.innerWIdth < 960 && scrollPos < 600) || elem) {
+            elem.classList.remove("highlight");
+        }
+    };
+
+    window.addEventListener("scroll", highlightMenu);
+    window.addEventListener("click", highlightMenu);
+
+    //  Close mobile Menu when clicking on a menu item
+    const hideMobileMenu = () => {
+        const menuBars = document.querySelector(".is-active");
+        if (window.innerWidth <= 768 && menuBars) {
+            menu.classList.toggle("is-active");
+            menuLinks.classList.remove("active");
+        }
+    };
+
+    menuLinks.addEventListener("click", hideMobileMenu);
+    navLogo.addEventListener("click", hideMobileMenu);
+
+
+
+
     //TypeWriter Effect
     // SELECT ELEMENTS FROM OUR DOM
     document.addEventListener("DOMContentLoaded", init);
