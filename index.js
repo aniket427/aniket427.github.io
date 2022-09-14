@@ -166,3 +166,50 @@
         }
         setTimeout(() => this.type(), typeSpeed);
     };
+
+
+
+    // Project img slider 1
+
+    let img1 = document.querySelector("#pro-img1");
+    let imgNum1 = 0;
+
+    let imgArr1 = [
+        "https://i.ibb.co/KKcGwL1/image-11.png",
+        "https://i.ibb.co/VwT3LHV/image-10.png",
+        "https://i.ibb.co/Z2gPwR2/Web-capture-12-9-2022-21932-friendly-cajeta-33faab-netlify-app.jpg",
+    ]
+
+
+    setInterval( ()=> {
+        if (imgNum1 === imgArr1.length - 1) {
+            imgNum1 = 0;
+        } else {
+            imgNum1++;
+        }
+        img1.src = imgArr1[imgNum1];
+    }, 4000);
+
+
+     // Project img slider 2
+
+     let img2 = document.querySelector("#pro-img2");
+     let imgNum2 = 0;
+ 
+     let imgArr2 = [
+         "https://i.ibb.co/zxdCBWV/image-12.png",
+         "https://i.ibb.co/x768dkt/Web-capture-12-9-2022-21148-harmonious-crostata-782582-netlify-app.jpg",
+         "https://i.ibb.co/gtHPzLh/image-13.png",
+     ]
+ 
+ 
+     setInterval( ()=> {
+         if (imgNum2 === imgArr2.length - 1) {
+             imgNum2 = 0;
+         } else {
+             imgNum2++;
+         }
+         img2.src = imgArr2[imgNum2];
+     }, 4000);
+ 
+ 
