@@ -32,7 +32,7 @@ rect.ContributionCalendar-day[data-level='4'] {
 
 .calendar {
     font-family: Helvetica, arial;
-    border: 1px solid #DDDDDD;
+    /* border: 1px solid black; */
     border-radius: 3px;
     min-height: 243px;
     text-align: center;
