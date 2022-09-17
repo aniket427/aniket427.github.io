@@ -270,7 +270,29 @@ body {
   /* display: flex; */
 }
 
+#soft_skills {
+  /* margin-top: 100px; */
+  /* border: 1px solid red; */
+  /* padding-top: 100px; */
+  height: 300px;
+  /* display: flex; */
+}
 #techStacks {
+
+  /* border: 1px solid gold; */
+  display: flex;
+  /* grid-template-columns: repeat(4, 100px); */
+  gap: 50px;
+  width: 60%;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+#soft_div {
 
   /* border: 1px solid gold; */
   display: flex;
@@ -350,6 +372,7 @@ body {
   background-color: #e3e3e3;
   border-radius: 25px;
   margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .l-pro-card {
@@ -699,6 +722,10 @@ body {
     padding-bottom: 100px;
   }
 
+  #soft_skills {
+    height: auto;
+    padding-bottom: 100px;
+  }
 }
 
 

@@ -38,21 +38,21 @@
             projectMenu.classList.remove("highlight");
             contactMenu.classList.remove("highlight");
             return;
-        } else if (window.innerWidth > 960 && scrollPos < 1800) {
+        } else if (window.innerWidth > 960 && scrollPos < 2000) {
             homeMenu.classList.remove("highlight");
             aboutMenu.classList.remove("highlight");
             skillsMenu.classList.add("highlight");
             projectMenu.classList.remove("highlight");
             contactMenu.classList.remove("highlight");
             return;
-        } else if (window.innerWidth > 960 && scrollPos < 2800) {
+        } else if (window.innerWidth > 960 && scrollPos < 3000) {
             homeMenu.classList.remove("highlight");
             aboutMenu.classList.remove("highlight");
             skillsMenu.classList.remove("highlight");
             projectMenu.classList.add("highlight");
             contactMenu.classList.remove("highlight");
             return;
-        } else if (window.innerWidth > 960 && scrollPos < 3200) {
+        } else if (window.innerWidth > 960 && scrollPos < 3900) {
             homeMenu.classList.remove("highlight");
             aboutMenu.classList.remove("highlight");
             skillsMenu.classList.remove("highlight");
