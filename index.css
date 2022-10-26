@@ -464,6 +464,40 @@ body {
   margin: auto;
 }
 
+.stats {
+  /* border: 1px solid yellow; */
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+
+}
+
+
+.stats img {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1250px) {
+  .stats {
+    /* border: 1px solid yellow; */
+
+  }
+
+  .stats>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+}
+
+
+
 #contact {
   padding-top: 100px;
   background-color: #1e293b;
