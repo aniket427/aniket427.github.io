@@ -805,3 +805,18 @@ body {
     text-align: justify;
   }
 }
+
+
+
+/* media for screen below 500px width */
+
+@media screen and (max-width: 500px) {
+  body {
+    width: fit-content;
+    /* border: 1px solid yellow; */
+  }
+
+  .stats>div>img {
+    margin: 10px 15px;
+  }
+}
