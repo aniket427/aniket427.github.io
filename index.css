@@ -663,7 +663,7 @@ body {
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
-    height: 60vh;
+    height: 70vh;
     font-size: 1.2rem;
   }
 
@@ -812,11 +812,32 @@ body {
 
 @media screen and (max-width: 500px) {
   body {
-    width: fit-content;
-    /* border: 1px solid yellow; */
+    min-width: 100%;
+    border: 1px solid yellow;
   }
 
   .stats>div>img {
     margin: 10px 15px;
+  }
+
+
+  #namepic1half {
+    /* border: 1px solid white; */
+    width: 100%;
+  }
+
+  .stats {
+    /* border: 1px solid white; */
+
+  }
+
+  .stats>div>img {
+    /* border: 1px solid yellow; */
+    width: 98%;
+  }
+
+  .stats>img {
+    /* border: 1px solid yellow; */
+    width: 98%;
   }
 }
