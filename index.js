@@ -213,3 +213,24 @@ setInterval(() => {
 }, 4000);
 
 
+
+// Project img slider 3
+
+let img3 = document.querySelector("#pro-img3");
+let imgNum3 = 0;
+
+let imgArr3 = [
+    "./resources/java1.png",
+    "./resources/java2.png",
+]
+
+
+setInterval(() => {
+    if (imgNum3 === imgArr3.length - 1) {
+        imgNum3 = 0;
+    } else {
+        imgNum3++;
+    }
+    img3.src = imgArr3[imgNum3];
+}, 4000);
+
