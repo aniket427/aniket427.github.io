@@ -285,7 +285,7 @@ body {
   display: flex;
   /* grid-template-columns: repeat(4, 100px); */
   gap: 50px;
-  width: 78%;
+  width: 80%;
   margin: auto;
   flex-wrap: wrap;
   align-items: center;
