@@ -281,11 +281,11 @@ body {
 
 #techStacks {
 
-  /* border: 1px solid gold; */
+  border: 1px solid gold;
   display: flex;
   /* grid-template-columns: repeat(4, 100px); */
   gap: 50px;
-  width: 80%;
+  width: 78%;
   margin: auto;
   flex-wrap: wrap;
   align-items: center;
