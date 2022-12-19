@@ -45,21 +45,21 @@ const highlightMenu = () => {
         projectMenu.classList.remove("highlight");
         contactMenu.classList.remove("highlight");
         return;
-    } else if (window.innerWidth > 960 && scrollPos < 3000) {
+    } else if (window.innerWidth > 960 && scrollPos < 3800) {
         homeMenu.classList.remove("highlight");
         aboutMenu.classList.remove("highlight");
         skillsMenu.classList.remove("highlight");
         projectMenu.classList.add("highlight");
         contactMenu.classList.remove("highlight");
         return;
-    } else if (window.innerWidth > 960 && scrollPos < 3900) {
+    } else if (window.innerWidth > 960 && scrollPos < 4700) {
         homeMenu.classList.remove("highlight");
         aboutMenu.classList.remove("highlight");
         skillsMenu.classList.remove("highlight");
         projectMenu.classList.remove("highlight");
         contactMenu.classList.remove("highlight");
         return;
-    } else if (window.innerWidth > 960 && scrollPos < 5000) {
+    } else if (window.innerWidth > 960 && scrollPos < 6300) {
         homeMenu.classList.remove("highlight");
         aboutMenu.classList.remove("highlight");
         skillsMenu.classList.remove("highlight");
@@ -167,6 +167,28 @@ typeWriter.prototype.type = function () {
     setTimeout(() => this.type(), typeSpeed);
 };
 
+
+// Project img slider 0
+
+let img0 = document.querySelector("#pro-img0");
+let imgNum0 = 0;
+
+let imgArr0 = [
+    "https://camo.githubusercontent.com/14a575a419ccf182b09bde99e2b50a727c50893b6d0bf8293bc7265ae85acdfa/68747470733a2f2f7468756d62732e647265616d7374696d652e636f6d2f622f746178692d6f6e6c696e652d736572766963652d63616c6c696e672d6361722d7669612d6d6f62696c652d6170702d70656f706c652d77616974696e672d636974792d7472616e73706f72742d6770732d726f7574652d747261636b696e672d6d616e2d776f6d616e2d7573652d6761646765742d6d61702d3233383534353431312e6a7067",
+    "https://raw.githubusercontent.com/Ninadjoshi212/Online-Cab-Booking-System/main/Assest/adminCntrl.jpg",
+    "https://raw.githubusercontent.com/Ninadjoshi212/Online-Cab-Booking-System/main/Assest/CustomerCntrl.jpg",
+    "https://raw.githubusercontent.com/Ninadjoshi212/Online-Cab-Booking-System/main/Assest/driverCntrl.jpg",
+]
+
+
+setInterval(() => {
+    if (imgNum0 === imgArr0.length - 1) {
+        imgNum0 = 0;
+    } else {
+        imgNum0++;
+    }
+    img0.src = imgArr0[imgNum0];
+}, 4000);
 
 
 // Project img slider 1

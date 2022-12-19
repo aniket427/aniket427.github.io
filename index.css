@@ -455,6 +455,11 @@ body {
   height: 100%;
 }
 
+#pro-img0 {
+  height: 80%;
+  margin-top: 5%;
+}
+
 #statistics {
   padding-top: 100px;
 }
@@ -484,6 +489,8 @@ body {
 .stats img {
   margin-bottom: 20px;
 }
+
+
 
 @media screen and (max-width: 1250px) {
   .stats {
